@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BsPencilSquare } from "react-icons/bs";
-import { AiFillDelete, AiFillFilter } from "react-icons/ai";
+import { AiFillDelete} from "react-icons/ai";
 
 class SingleComment extends React.Component {
   state = {

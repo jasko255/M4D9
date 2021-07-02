@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {Modal, Button} from "react-bootstrap"
+import {Modal} from "react-bootstrap"
 import {useState} from "react"
 import CommentList from "./CommentList";
 import { withRouter } from "react-router";
@@ -9,7 +9,7 @@ const SingleMovie = (props) => {
 const [show, setShow] = useState(false);
 
 const handleClose = () => setShow(false);
-const handleShow = () => setShow(true);
+// const handleShow = () => setShow(true);
 console.log(props)
   return (
     <>
