@@ -31,12 +31,12 @@ const ShowDetail = ({match}) => {
             if(id){
             let response = await fetch(' https://striveschool-api.herokuapp.com/api/comments/' + id, {
                 headers: {
-                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlNWM1ZGNlYWY0ODAwMTVjOTE5NDEiLCJpYXQiOjE2MjMzMzAyNjUsImV4cCI6MTYyNDUzOTg2NX0._ntJzPaAAcCjhY63xbTwnrUyok7egeh-5vyDejw532c' 
+                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFlNWM1ZGNlYWY0ODAwMTVjOTE5NDEiLCJpYXQiOjE2MjUyMjkwODgsImV4cCI6MTYyNjQzODY4OH0.1gQDudWguqOyo5hAjlJFxHpOHzUUNrPfKHFccmPK5og' 
                 }
             })
             let moviesComments = await response.json()
-            console.log('comments', moviesComments);
             setComments(moviesComments)    
+            console.log('comments', moviesComments);
             }    
         }
         getMovieComments()

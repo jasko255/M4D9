@@ -21,7 +21,7 @@ function App() {
     <Header/>
     <Route exact path="/" render={(routerProps) => <RowOfMovies {...routerProps} title="Star Wars" />} />
     <Route exact path="/" render={(routerProps) => <RowOfMovies {...routerProps} title='Harry Potter' />} />
-    <Route exact path="/" render={(routerProps) => <RowOfMovies {...routerProps} title='The lord of the rings' />} />
+    <Route exact path="/" render={(routerProps) => <RowOfMovies {...routerProps} title='The Lord of the Rings' />} />
     
     <Route path="/details/:movId/" component={ShowDetail} />
     {/* <RowOfMovies title='Harry Potter'/> */}
